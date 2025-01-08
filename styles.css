@@ -1,39 +1,117 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text */
 }
 
+/* Header Styles */
 header {
-    background: #333;
-    color: #fff;
+    background: #1e1e1e; /* Darker header */
+    color: #ffffff;
     padding: 10px 0;
     text-align: center;
 }
 
 header nav a {
-    color: #fff;
+    color: #bb86fc; /* Soft purple for links */
     text-decoration: none;
     margin: 0 10px;
+    font-weight: bold;
 }
 
 header nav a:hover {
     text-decoration: underline;
+    color: #ffffff; /* Link color on hover */
 }
 
+/* Main Content Styles */
 main {
     padding: 20px;
     text-align: center;
+    background-color: #1e1e1e; /* Slightly lighter than the body */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px;
 }
 
+/* Form Styles */
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #2a2a2a; /* Dark form background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #bb86fc; /* Purple labels */
+    font-weight: bold;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #1e1e1e; /* Input background */
+    color: #e0e0e0; /* Input text */
+}
+
+form button {
+    background-color: #bb86fc; /* Purple button */
+    color: #121212;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+form button:hover {
+    background-color: #ffffff; /* Button hover effect */
+    color: #1e1e1e;
+}
+
+/* Footer Styles */
 footer {
-    background: #333;
-    color: #fff;
+    background: #1e1e1e;
+    color: #e0e0e0;
     text-align: center;
     padding: 10px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
+    font-size: 14px;
+    border-top: 1px solid #333;
 }
+
+/* List Styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #2a2a2a;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Links */
+a {
+    color: #bb86fc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
