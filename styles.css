@@ -1,117 +1,119 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
+/* Basic Reset */
+* {
     margin: 0;
     padding: 0;
-    background-color: #121212; /* Dark background */
-    color: #e0e0e0; /* Light text */
+    box-sizing: border-box;
 }
 
-/* Header Styles */
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0;  /* Light text */
+    line-height: 1.6;
+}
+
+/* Header Styling */
 header {
-    background: #1e1e1e; /* Darker header */
-    color: #ffffff;
-    padding: 10px 0;
+    background-color: #1e1e1e;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+header nav {
     text-align: center;
 }
 
 header nav a {
-    color: #bb86fc; /* Soft purple for links */
+    color: #bb86fc; /* Accent color */
     text-decoration: none;
-    margin: 0 10px;
+    padding: 12px 20px;
+    font-size: 18px;
     font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
 header nav a:hover {
-    text-decoration: underline;
-    color: #ffffff; /* Link color on hover */
+    background-color: #333;
+    color: white;
 }
 
-/* Main Content Styles */
-main {
-    padding: 20px;
+/* Resume Section Styling */
+#resume {
+    padding: 50px 20px;
     text-align: center;
-    background-color: #1e1e1e; /* Slightly lighter than the body */
+    background-color: #181818; /* Slightly darker background for this section */
+    margin: 20px 0;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Form Styles */
-form {
-    max-width: 400px;
-    margin: 20px auto;
-    background-color: #2a2a2a; /* Dark form background */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+#resume h1 {
+    color: #bb86fc; /* Accent color for header */
+    margin-bottom: 20px;
+    font-size: 36px;
 }
 
-form label {
-    display: block;
-    margin-bottom: 8px;
-    color: #bb86fc; /* Purple labels */
-    font-weight: bold;
+#resume p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #bbbbbb;
 }
 
-form input, form textarea, form button {
-    width: 100%;
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #333;
-    border-radius: 4px;
-    background-color: #1e1e1e; /* Input background */
-    color: #e0e0e0; /* Input text */
-}
-
-form button {
-    background-color: #bb86fc; /* Purple button */
-    color: #121212;
-    font-weight: bold;
-    cursor: pointer;
-    border: none;
-}
-
-form button:hover {
-    background-color: #ffffff; /* Button hover effect */
-    color: #1e1e1e;
-}
-
-/* Footer Styles */
-footer {
-    background: #1e1e1e;
-    color: #e0e0e0;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    font-size: 14px;
-    border-top: 1px solid #333;
-}
-
-/* List Styling */
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    background-color: #2a2a2a;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-/* Links */
-a {
-    color: #bb86fc;
+/* Button Styling */
+.resume-link .btn {
+    padding: 14px 28px;
+    background-color: #4CAF50; /* Green background for button */
+    color: white;
+    font-size: 18px;
     text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-a:hover {
-    text-decoration: underline;
-    color: #ffffff;
+.resume-link .btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly grow the button on hover */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #1e1e1e;
+    color: #bbbbbb;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 14px;
+}
+
+/* Container for alignment */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header nav a {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    #resume h1 {
+        font-size: 30px;
+    }
+
+    #resume p {
+        font-size: 16px;
+    }
+
+    .resume-link .btn {
+        font-size: 16px;
+        padding: 12px 24px;
+    }
 }
 
